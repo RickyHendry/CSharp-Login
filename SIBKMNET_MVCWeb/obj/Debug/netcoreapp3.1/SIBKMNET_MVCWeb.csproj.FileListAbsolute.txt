@@ -137,6 +137,8 @@ C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\
 C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\SIBKMNET_MVCWeb.TagHelpers.input.cache
 C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\SIBKMNET_MVCWeb.TagHelpers.output.cache
 C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\SIBKMNET_MVCWeb.RazorCoreGenerate.cache
+C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\Razor\Views\Account\EditAcc.cshtml.g.cs
+C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\Razor\Views\Account\Forgot.cshtml.g.cs
 C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\Razor\Views\ErrorPage\Unauthorized.cshtml.g.cs
@@ -158,4 +160,3 @@ C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\
 C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\SIBKMNET_MVCWeb.dll
 C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\SIBKMNET_MVCWeb.pdb
 C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\SIBKMNET_MVCWeb.genruntimeconfig.cache
-C:\Users\Matrix Computer\source\repos\SIBKMNET_MVCWeb\SIBKMNET_MVCWeb\obj\Debug\netcoreapp3.1\SIBKMNET_MVCWeb.csproj.AssemblyReference.cache

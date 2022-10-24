@@ -17,32 +17,36 @@ namespace SIBKMNET_MVCWeb.Controllers
         {
             this.accountRepository = accountRepository;
         }
-
         public IActionResult Login()
         {
             return View();
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Login(Login login)
+        public IActionResult Forgot()
         {
-            // statement mengambil data dari database sesuai dengan email dan password
-            // return -> Employee, FullName, Email, Role -> ViewModels
-            var data = accountRepository.Login(login);
-            if(data != null)
-            {
-                // inisialisasi nilai pada session
-                HttpContext.Session.SetString("Role", data.Role);
-                return RedirectToAction("Index", "Province");
-            }
             return View();
         }
-        
 
-        // Register
         public IActionResult Register()
         {
+            return View();
+        }
+
+        public IActionResult EditAcc()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult EditAcc(int id, EditAcc editAcc)
+        {
+            //MASIH BELOM
+
+            var data = accountRepository.EditAcc(id, editAcc);
+            if (data > 0)
+            {
+                return RedirectToAction("Login", "Account");
+            }
             return View();
         }
 
@@ -50,13 +54,53 @@ namespace SIBKMNET_MVCWeb.Controllers
         public IActionResult Register(Register register)
         {
             var data = accountRepository.Register(register);
-            if(data > 0)
+            if (data > 0)
             {
                 return RedirectToAction("Login", "Account");
             }
             return View();
         }
-        // Change Password
-        // Forgot Password
+
+        [HttpPost]
+        //[ValidateAntiForgeryToken]
+        public IActionResult Login(Login login)
+        {
+            if (ModelState.IsValid)
+            {
+                //statement mengambil data dari database sesuai dengan email dan password
+                //return Id employee, FullName, Email, Role -> Masukkan ke ViewModels
+                var data = accountRepository.Login(login);
+
+                if (data != null)
+                {
+                    //inisialisasi nilai pada session
+                    HttpContext.Session.SetString("Role", data.Role);
+                    HttpContext.Session.SetInt32("Id", data.Id);
+                    return RedirectToAction("Index", "Province");
+                }
+                return RedirectToAction("Unauthorized", "ErrorPage");
+            }
+            return View();
+        }
+        [HttpPost]
+
+        public IActionResult Forgot(Forgot forgot)
+        {
+            if (ModelState.IsValid)
+            {
+                //statement mengambil data dari database sesuai dengan email dan password
+                //return Id employee, FullName, Email, Role -> Masukkan ke ViewModels
+                var data = accountRepository.Forgot(forgot);
+
+                if (data != null)
+                {
+                    //inisialisasi nilai pada session
+                    HttpContext.Session.SetString("Role", data.Role);
+                    return RedirectToAction("Index", "Province");
+                }
+                return RedirectToAction("Unauthorized", "ErrorPage");
+            }
+            return View();
+        }
     }
 }
